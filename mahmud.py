@@ -1,10 +1,11 @@
-n = int( input())
-
-if n%2==0:
-    print('positive')
-
-elif n%2!=0:
-    print('negative')
-
-else:
-    print('zero')        
+try:
+    n = int(input())
+    print(n/4)
+except ValueError:
+    print("input must be a number")  
+except ZeroDivisionError:
+    print("division by zero is not allowed")  
+except:
+    print("eror") 
+finally:
+    print("program finishid")        
